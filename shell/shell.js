@@ -10,13 +10,15 @@ app.get('/', (req, res) => {
 
 // Define routes for each microfrontend
 app.get('/microfrontend1', (req, res) => {
+  console.log("Microfrontend 1 route accessed.");
   // Serve content from S3 bucket
-  res.redirect('https://microfront.ambuoglabs.com/mfe-app-1/index.html ');
+  res.redirect('https://microfront.ambuoglabs.com/mfe-app-1/index.html');
 });
 
 app.get('/microfrontend2', (req, res) => {
+  console.log("Microfrontend 2 route accessed.");
   // Serve content from S3 bucket
-  res.redirect('https://microfront.ambuoglabs.com/mfe-app-2/index.html ');
+  res.redirect('https://microfront.ambuoglabs.com/mfe-app-2/index.html');
 });
 
 app.listen(port, () => {
