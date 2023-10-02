@@ -1,0 +1,10 @@
+{
+  "name": "my-microfrontend-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node shell/shell.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
